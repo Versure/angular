@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@recode/feature-flags": ["libs/feature-flags/src/index.ts"],
       "@recode/utilities": ["libs/utilities/src/index.ts"]
     }
   },

@@ -1,0 +1,14 @@
+{
+  "name": "@recode/feature-flags",
+  "version": "17.0.0-alpha.1",
+  "peerDependencies": {
+    "@angular/core": "^17.1.0",
+    "@angular/router": "~17.1.0",
+    "rxjs": "~7.8.0",
+    "@ngrx/store": "^17.1.1",
+    "@ngrx/store-devtools": "^17.1.1",
+    "@recode/utilities": "^17.0.0-alpha.4"
+  },
+  "dependencies": {},
+  "sideEffects": false
+}
