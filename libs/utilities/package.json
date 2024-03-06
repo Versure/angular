@@ -1,6 +1,6 @@
 {
   "name": "@recode/utilities",
-  "version": "17.0.0-alpha.4",
+  "version": "17.0.0-rc.1",
   "peerDependencies": {
     "rxjs": "^7.8.0"
   },
