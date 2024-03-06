@@ -1,0 +1,69 @@
+{
+  "name": "feature-flags-sample",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "recode",
+  "sourceRoot": "apps/feature-flags-sample/src",
+  "tags": ["scope:recode", "domain:feature-flags", "type:app"],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/feature-flags-sample",
+        "index": "apps/feature-flags-sample/src/index.html",
+        "browser": "apps/feature-flags-sample/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/feature-flags-sample/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/feature-flags-sample/src/favicon.ico",
+          "apps/feature-flags-sample/src/assets"
+        ],
+        "styles": ["apps/feature-flags-sample/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "feature-flags-sample:build:production"
+        },
+        "development": {
+          "buildTarget": "feature-flags-sample:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "feature-flags-sample:build"
+      }
+    }
+  }
+}

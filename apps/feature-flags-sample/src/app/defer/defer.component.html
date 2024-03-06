@@ -1,0 +1,14 @@
+<h1>Defer block sample</h1>
+<p>
+  This page contains two defer blocks which will only display their contents when the defer feature flag has been enabled.
+
+  @defer(when featureFlagEnabled('defer') | async){
+    <p>This block will only display when the defer feature flag has been enabled.</p>
+    <em>This example is using a function call to determine the feature flag that can access this element.</em>
+  }
+
+  @defer(when isEnabled$ | async){
+    <p>This block will only display when the defer feature flag has been enabled.</p>
+    <em>This example is using an observable to determine the feature flag that can access this element.</em>
+  }
+</p>
