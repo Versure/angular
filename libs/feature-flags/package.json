@@ -1,5 +1,5 @@
 {
-  "name": "@recode/feature-flags",
+  "name": "@versure/feature-flags",
   "version": "17.0.0-rc.1",
   "peerDependencies": {
     "@angular/core": "^17.1.0",
@@ -7,7 +7,7 @@
     "rxjs": "~7.8.0",
     "@ngrx/store": "^17.1.1",
     "@ngrx/store-devtools": "^17.1.1",
-    "@recode/utilities": "^17.0.0-rc.1"
+    "@versure/utilities": "^17.0.0-rc.1"
   },
   "dependencies": {},
   "sideEffects": false

@@ -1,10 +1,10 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FeatureFlagsFacade } from "@recode/feature-flags";
+import { FeatureFlagsFacade } from "@versure/feature-flags";
 import { Observable } from "rxjs";
 
 @Component({
-  selector: 'recode-defer',
+  selector: 'versure-defer',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './defer.component.html',

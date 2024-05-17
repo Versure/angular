@@ -2,8 +2,8 @@
   "name": "feature-flags",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/feature-flags/src",
-  "prefix": "recode",
-  "tags": ["scope:recode", "domain:feature-flags", "type:package"],
+  "prefix": "versure",
+  "tags": ["scope:versure", "domain:feature-flags", "type:package"],
   "projectType": "library",
   "targets": {
     "build": {

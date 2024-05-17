@@ -1,9 +1,10 @@
 {
-  "name": "@recode/source",
+  "name": "@versure/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {},
   "private": true,
+  "repository": "https://github.com/Versure/angular.git",
   "dependencies": {
     "@angular/animations": "~17.1.0",
     "@angular/common": "~17.1.0",

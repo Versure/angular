@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'recode-appointment',
+  selector: 'versure-appointment',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './appointment.component.html',

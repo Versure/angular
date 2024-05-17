@@ -1,5 +1,5 @@
 {
-  "name": "@recode/utilities",
+  "name": "@versure/utilities",
   "version": "17.0.0-rc.1",
   "peerDependencies": {
     "rxjs": "^7.8.0"
@@ -10,5 +10,5 @@
     "email": "jopreuvers@gmail.com",
     "name": "Jop Reuvers"
   },
-  "description": "ReCode package containing utility functions that can be used in all Angular apps."
+  "description": "Versure package containing utility functions that can be used in all Angular apps."
 }

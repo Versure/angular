@@ -2,8 +2,8 @@
   "name": "utilities",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/utilities/src",
-  "prefix": "recode",
-  "tags": ["scope:recode", "domain:utilities", "type:package"],
+  "prefix": "versure",
+  "tags": ["scope:versure", "domain:utilities", "type:package"],
   "projectType": "library",
   "targets": {
     "build": {

@@ -1,10 +1,10 @@
-# @recode/feature-flags
+# @versure/feature-flags
 
 This library contains generic feature-flags functionality that can be used in your Angular apps.
 
 ## Installation
 To install the library using npm you can use the following command:
-`npm install @recode/feature-flags`
+`npm install @versure/feature-flags`
 
 ## Configuration
 You can use the `provideFeatureFlags` provider to register the package and provide the enabled feature flags:
@@ -12,7 +12,7 @@ You can use the `provideFeatureFlags` provider to register the package and provi
 import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { appRoutes } from './app.routes';
-import { provideFeatureFlags } from "@recode/feature-flags";
+import { provideFeatureFlags } from "@versure/feature-flags";
 
 const featureFlags = ["customer", "defer"];
 
@@ -29,7 +29,7 @@ The `featureFlagEnabled` guard returns a `CanMatchFn` and can be used to secure 
 
 ```typescript
 import { Route } from '@angular/router';
-import { featureFlagEnabled } from "@recode/feature-flags";
+import { featureFlagEnabled } from "@versure/feature-flags";
 import { PageComponent } from "./page/page.component";
 
 export const appRoutes: Route[] = [
@@ -72,11 +72,11 @@ When you want to limit access to individual parts of your app instead of routes 
 ```typescript
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FeatureFlagsFacade } from "@recode/feature-flags";
+import { FeatureFlagsFacade } from "@versure/feature-flags";
 import { Observable } from "rxjs";
 
 @Component({
-  selector: 'recode-defer',
+  selector: 'versure-defer',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './defer.component.html',

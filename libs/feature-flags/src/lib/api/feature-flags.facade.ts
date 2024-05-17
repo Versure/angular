@@ -3,7 +3,7 @@ import { map, Observable, of } from "rxjs";
 import { FeatureFlagsState } from "../data-access/feature-flags.state";
 import { Store } from "@ngrx/store";
 import { featureFlagsFeature } from "../data-access/feature-flags.feature";
-import { filterNullAndUndefined } from "@recode/utilities";
+import { filterNullAndUndefined } from "@versure/utilities";
 import { featureFlagsPageActions } from "../data-access/actions/feature-flags-page.actions";
 
 @Injectable()

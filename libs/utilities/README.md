@@ -1,4 +1,4 @@
-# @recode/utilities
+# @versure/utilities
 
 This library contains generic utility functions that can be used in your Angular apps.
 

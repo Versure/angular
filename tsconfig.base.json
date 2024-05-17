@@ -10,13 +10,13 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": ["es2022", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@recode/feature-flags": ["libs/feature-flags/src/index.ts"],
-      "@recode/utilities": ["libs/utilities/src/index.ts"]
+      "@versure/feature-flags": ["libs/feature-flags/src/index.ts"],
+      "@versure/utilities": ["libs/utilities/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

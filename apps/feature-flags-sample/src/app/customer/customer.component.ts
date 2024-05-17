@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'recode-customer',
+  selector: 'versure-customer',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './customer.component.html',
